@@ -14,7 +14,7 @@ routes.get('/boxes/:id', BoxController.show);
 
 routes.post(
     '/boxes/:id/files', 
-    multer(multerConfig).single('file'), BoxController.store,
+    multer(multerConfig).single('file'),
     FileController.store
 );//array varios arquivos no lugar de single
 /*

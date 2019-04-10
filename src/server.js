@@ -18,7 +18,7 @@ io.on('connection', socket => {
 
 mongoose.connect("mongodb+srv://omnistack:omnistack@cluster0-n4nnb.mongodb.net/omnistack?retryWrites=true", 
     {
-        useNewUrlParser: true//novo tipo de url
+        useNewUrlParser: true //novo tipo de url
     }
 );
 

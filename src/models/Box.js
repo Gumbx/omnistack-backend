@@ -7,7 +7,7 @@ const Box = new mongoose.Schema({
     },
     files: [{ type: mongoose.Schema.Types.ObjectId, ref: "File" }] //file vai armazenar os ids q pertencem aos box
 }, {
-    timestamps: true//data de criaçao
+    timestamps: true //data de criaçao
 });
 
 module.exports = mongoose.model('Box', Box);
