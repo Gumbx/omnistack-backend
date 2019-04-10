@@ -3,7 +3,7 @@ const Box = require('../models/Box');
 class BoxController  {
     async store (req, res){//async lida com requisicoes assincronas
 
-        const box = await Box.create(req.body.title);
+        const box = await Box.create({ title: req.body.title });
 
         return res.json(box);
     }
